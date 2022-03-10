@@ -1,0 +1,27 @@
+<html>
+    <head>
+       
+    </head>
+
+    <body>
+        <center>
+            <img id="img" onmouseover="setNewImage()" onmouseout="setOldImage()" src="tom.png" width="200" height="300">
+            <h1 id="text1" onmouseover="setNewImage()">Hello  here iam.....</h1>
+            <h1 id="text2"   onmouseout="setOldImage()">Hi.....where are you....</h1>
+        </center>
+        <script>
+            function setNewImage()
+            {
+                document.getElementById("img").src="mario.png"
+                document.getElementById("text1").style.display="none"
+                document.getElementById("text2").style.display="block"
+            }
+            function setOldImage()
+            {
+                document.getElementById("img").src="tom.png"
+                document.getElementById("text1").style.display="block"
+                document.getElementById("text2").style.display="none"
+            }
+        </script>
+    </body>
+</html>
